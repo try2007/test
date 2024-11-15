@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>Методичка по графической библиотеки питона Pillow KAN</title>
 <style>
 <!--
  /* Font Definitions */
@@ -163,11 +162,11 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Библио
 Python Pillow является ответвлением более старой библиотеки под названием PIL.
 PIL расшифровывается как Python Imaging Library. В Python есть много модулей
 для работы с изображениями и их обработки. Если вы хотите работать с
-изображениями напрямую, оперируя их пикселями, вы можете использовать NumPy и SciPy.
-Другими популярными библиотеками для обработки изображений являются OpenCV,
-scikit-image и Mahotas. Некоторые из этих библиотек быстрее и мощнее, чем
-Pillow. Для начинающих однако </span><span lang=EN-US style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:black'>Pillow</span><span
+изображениями напрямую, оперируя их пикселями, вы можете использовать NumPy и
+SciPy. Другими популярными библиотеками для обработки изображений являются
+OpenCV, scikit-image и Mahotas. Некоторые из этих библиотек быстрее и мощнее,
+чем Pillow. Для начинающих однако </span><span lang=EN-US style='font-size:
+13.5pt;font-family:"Arial",sans-serif;color:black'>Pillow</span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'> является
 предпочтительным вариантом для задач обработки изображений высокого уровня,
 которые не требуют более продвинутых навыков обработки.</span></p>
@@ -178,9 +177,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вам ну�
 будет установить библиотеку, прежде чем вы сможете ее использовать. Вы можете
 установить Pillow с помощью pip в виртуальной среде (</span><span lang=EN-US
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>terminal</span><span
-lang=EN-US style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>
-</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>–
-где мы писали </span><span lang=EN-US style='font-size:13.5pt;font-family:"Arial",sans-serif;
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'> – где мы
+писали </span><span lang=EN-US style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'>pip</span><span lang=EN-US style='font-size:13.5pt;font-family:
 "Arial",sans-serif;color:black'> </span><span lang=EN-US style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:black'>install</span><span lang=EN-US
@@ -207,8 +205,8 @@ Pillow и выполнять основные операции с изображ
 
 <p class=MsoNormal style='margin-top:42.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-style='font-size:18.0pt;font-family:"Arial",sans-serif;color:black'>Модуль
-Image и класс Image в Pillow</span></p>
+style='font-size:18.0pt;font-family:"Arial",sans-serif;color:black'>Модуль Image
+и класс Image в Pillow</span></p>
 
 <p class=MsoNormal style='margin-top:9.0pt;margin-right:0cm;margin-bottom:0cm;
 margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -233,19 +231,37 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>). Начн�
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>&gt;&gt;&gt;
-</span><b><span lang=EN-US style='font-size:10.0pt;font-family:Consolas;
-color:#8959A8'>from</span></b><span lang=EN-US style='font-size:10.0pt;
-font-family:Consolas;color:black'> PIL </span><b><span lang=EN-US
-style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>import</span></b><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> Image<br>
-&gt;&gt;&gt; filename = &quot;buildings.jpg&quot;<br>
+style='font-size:10.0pt;font-family:Consolas;color:black'>&gt;&gt;&gt; </span><b><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>from</span></b><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> </span><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>PIL</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> </span><b><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>import</span></b><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> </span><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>Image</span><span
+style='font-size:10.0pt;font-family:Consolas;color:black'><br>
+&gt;&gt;&gt; </span><span lang=EN-US style='font-size:10.0pt;font-family:Consolas;
+color:black'>filename</span><span style='font-size:10.0pt;font-family:Consolas;
+color:black'> = &quot;</span><span lang=EN-US style='font-size:10.0pt;
+font-family:Consolas;color:black'>buildings</span><span style='font-size:10.0pt;
+font-family:Consolas;color:black'>.</span><span lang=EN-US style='font-size:
+10.0pt;font-family:Consolas;color:black'>jpg</span><span style='font-size:10.0pt;
+font-family:Consolas;color:black'>&quot;<br>
 &gt;&gt;&gt; </span><b><span lang=EN-US style='font-size:10.0pt;font-family:
 Consolas;color:#8959A8'>with</span></b><span lang=EN-US style='font-size:10.0pt;
-font-family:Consolas;color:black'> Image.open(filename) </span><b><span
+font-family:Consolas;color:black'> </span><span lang=EN-US style='font-size:
+10.0pt;font-family:Consolas;color:black'>Image</span><span style='font-size:
+10.0pt;font-family:Consolas;color:black'>.</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Consolas;color:black'>open</span><span
+style='font-size:10.0pt;font-family:Consolas;color:black'>(</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>filename</span><span
+style='font-size:10.0pt;font-family:Consolas;color:black'>) </span><b><span
 lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>as</span></b><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> img:<br>
-...     img.load()<br>
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> </span><span
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>img</span><span
+style='font-size:10.0pt;font-family:Consolas;color:black'>:<br>
+...     </span><span lang=EN-US style='font-size:10.0pt;font-family:Consolas;
+color:black'>img.load()<br>
 ...<br>
 <br>
 &gt;&gt;&gt; type(img)<br>
@@ -305,8 +321,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>&nbsp;сох
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img width=532 height=353 id="Рисунок 48"
-src="index.files/image001.jpg" alt="файл building.jpg"></span><span
+color:black'><img width=532 height=352 id="Рисунок 48"
+src="PillowKAN.files/image001.jpg" alt="файл building.jpg"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>файл
 building.jpg</span></p>
 
@@ -393,7 +409,7 @@ Pillow, назначает координаты (0, 0) пикселю в вер�
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img width=508 height=340 src="index.files/image002.png"
+color:black'><img width=508 height=340 src="PillowKAN.files/image002.png"
 alt="  - Описание: Область кадрирования"></span><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:black'>Область кадрирования</span></p>
 
@@ -409,7 +425,7 @@ color:black'>&nbsp;возвращает в приведенном выше ко�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img width=166 height=353 id="Рисунок 46"
-src="index.files/image003.jpg" alt="Обрезанная часть изображения"></span><span
+src="PillowKAN.files/image003.jpg" alt="Обрезанная часть изображения"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Обрезанная
 часть изображения</span></p>
 
@@ -440,7 +456,7 @@ font-family:"Arial",sans-serif;color:black'>&nbsp;отображает обре�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img width=100 height=212 id="Рисунок 45"
-src="index.files/image004.jpg" alt="Сжатое изображение"></span><span
+src="PillowKAN.files/image004.jpg" alt="Сжатое изображение"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Сжатое
 изображение</span></p>
 
@@ -536,7 +552,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Этот к�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img width=651 height=431 id="Рисунок 44"
-src="index.files/image005.jpg" alt="Перевернутое изображние"></span><span
+src="PillowKAN.files/image005.jpg" alt="Перевернутое изображние"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Перевернутое
 изображние</span></p>
 
@@ -607,10 +623,10 @@ margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal;
 background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
 style='font-size:13.5pt;font-family:Consolas;color:black'>Image.TRANSVERSE</span><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>:
-перемещает строки и столбцы, используя нижний левый пиксель в качестве
-источника, при этом нижний левый пиксель остается фиксированным относительно
-исходной и измененной версиями.</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>: перемещает
+строки и столбцы, используя нижний левый пиксель в качестве источника, при этом
+нижний левый пиксель остается фиксированным относительно исходной и измененной
+версиями.</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -634,8 +650,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Этот м�
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img width=626 height=415 id="Рисунок 43"
-src="index.files/image006.jpg" alt="Изображение повернуто на 45 градусов"></span><span
+color:black'><img width=625 height=414 id="Рисунок 43"
+src="PillowKAN.files/image006.jpg" alt="Изображение повернуто на 45 градусов"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Изображение
 повернуто на 45 градусов</span></p>
 
@@ -663,7 +679,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Этот м�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img width=605 height=605 id="Рисунок 42"
-src="index.files/image007.jpg" alt="Повернутое изображение увеличенного размера"></span><span
+src="PillowKAN.files/image007.jpg"
+alt="Повернутое изображение увеличенного размера"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Повернутое
 изображение увеличенного размера</span></p>
 
@@ -722,8 +739,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>. Тепер
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img width=626 height=418 id="Рисунок 41"
-src="index.files/image008.jpg" alt=strawberry.jpg></span><span
+color:black'><img width=627 height=418 id="Рисунок 41"
+src="PillowKAN.files/image008.jpg" alt=strawberry.jpg></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>strawberry.jpg</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -772,7 +789,7 @@ color:black'>&nbsp;дважды, чтобы преобразовать изоб�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img width=624 height=416 id="Рисунок 40"
-src="index.files/image009.jpg" alt="Изображение в градациях серого"></span><span
+src="PillowKAN.files/image009.jpg" alt="Изображение в градациях серого"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Изображение
 в градациях серого</span></p>
 
@@ -840,7 +857,7 @@ style='font-size:10.0pt;font-family:Consolas;color:black'> _: 0)<br>
 ... )<br>
 <br>
 &gt;&gt;&gt; green_merge = Image.merge(<br>
-...     &quot;RGB&quot;, (zeroed_band, green, zeroed_band)<br>
+...     &quot;RGB&quot;, (zeroed_band, green, zeroed_band)<br>
 ... )<br>
 <br>
 &gt;&gt;&gt; blue_merge = Image.merge(<br>
@@ -901,7 +918,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>, котор
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img width=644 height=162 src="index.files/image010.png"
+color:black'><img width=644 height=162 src="PillowKAN.files/image010.png"
 alt="  - Описание: https://habrastorage.org/getpro/habr/upload_files/9a0/676/30e/9a067630e9cf00028d144252c76f2bd7.webp"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -919,21 +936,24 @@ color:black'>&nbsp;</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'>Создание общего изображения из нескольких</span></p>
 
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Когда
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
+Consolas;color:black'><br>
+<br>
+</span><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>Когда
 требуется вывести несколько изображений рядом друг с другом, сохраненных одним
 файлом, можно воспользоваться следующей функцией:</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><b><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>from</span></b><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas'> PIL <b><span
-style='color:#8959A8'>import</span></b> Image<br>
+6.0pt;margin-left:0cm;line-height:normal'><b><span lang=EN-US style='font-size:
+10.0pt;font-family:Consolas;color:#8959A8'>from</span></b><span lang=EN-US
+style='font-size:10.0pt;font-family:Consolas'> PIL <b><span style='color:#8959A8'>import</span></b>
+Image<br>
 <br>
 <b><span style='color:#8959A8'>def</span></b> tile(*images, vertical=<b><span
 style='color:#8959A8'>False</span></b>):<br>
@@ -955,56 +975,9 @@ style='color:#8959A8'>in</span></b> images:<br>
 <br>
     <b><span style='color:#8959A8'>return</span></b> tiled_img</span></p>
 
-<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>Первый параметр
-в&nbsp;</span><span style='font-size:10.0pt;font-family:Consolas'>tile()</span><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;использует
-оператор распаковки (*), поэтому в качестве входных аргументов можно
-использовать любое количество объектов типа PIL.Image. Для параметра ключевого
-слова&nbsp;</span><span style='font-size:10.0pt;font-family:Consolas'>vertical</span><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;можно
-установить значение&nbsp;</span><span style='font-size:10.0pt;font-family:Consolas'>True</span><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>, если вы хотите
-размещать изображения вертикально, а не горизонтально. Эта функция
-предполагает, что все изображения имеют одинаковый размер.</span></p>
-
-<p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>Общий размер
-окончательного изображения рассчитывается исходя из размера изображений и
-количества используемых изображений. Затем вы создаете новый объект изображения
-с тем же режимом, что и исходные изображения, и с размером общего экрана.</span></p>
-
-<p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>Цикл for вставляет
-изображения, которые вы вводите при вызове функции, в окончательное
-изображение. Функция возвращает окончательный объект Image, содержащий все
-изображения рядом.</span></p>
-
-<p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span
-style='font-size:12.0pt;font-family:"Times New Roman",serif'>Изображение в
-данной статье, показывающее три цветовых режима для клубники, было получено
-путем вызова функции&nbsp;</span><span style='font-size:10.0pt;font-family:
-Consolas'>tile()</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;следующим
-образом:</span></p>
-
-<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
-0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'><span lang=EN-US
-style='font-size:10.0pt;font-family:Consolas'>strawberry_channels = tile(red_merge,
-green_merge, blue_merge)</span></p>
-
-<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
-6.0pt;margin-left:0cm;line-height:normal'><span style='font-size:12.0pt;
-font-family:"Times New Roman",serif'>Эта функция будет использоваться для
-создания всех изображений, которые состоят из нескольких в текущем руководстве.</span></p>
-
-<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
-6.0pt;margin-left:0cm;line-height:normal;background:white'><span
-style='font-size:10.0pt;font-family:Consolas;color:black'><br>
-</span><span style='font-size:18.0pt;font-family:"Arial",sans-serif;color:black'>Обработка
+<p class=MsoNormal style='margin-top:42.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"Arial",sans-serif;color:black'>Обработка
 изображений с помощью Pillow в Python</span></p>
 
 <p class=MsoNormal style='margin-top:9.0pt;margin-right:0cm;margin-bottom:0cm;
@@ -1111,7 +1084,7 @@ font-family:"Arial",sans-serif;color:black'>:</span></p>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=400 height=200 id="Рисунок 34"
-src="index.files/image011.jpg"
+src="PillowKAN.files/image011.jpg"
 alt="Два обрезанных изображения показывают разницу между двумя версиями:"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Два
 обрезанных изображения показывают разницу между двумя версиями:</span></p>
@@ -1139,7 +1112,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Теперь
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=507 height=992 src="index.files/image012.png"
+color:black'><img border=0 width=507 height=992
+src="PillowKAN.files/image012.png"
 alt="  - Описание: https://habrastorage.org/getpro/habr/upload_files/139/6f7/26e/1396f726e29de938aa0e1445d700d64d.webp"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1174,8 +1148,8 @@ font-family:"Arial",sans-serif;color:black'>, который используе�
 <p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Что делать,
-если вы хотите повысить резкость изображения? В этом случае вы можете
-использовать фильтр&nbsp;</span><span style='font-size:13.5pt;font-family:Consolas;
+если вы хотите повысить резкость изображения? В этом случае вы можете использовать
+фильтр&nbsp;</span><span style='font-size:13.5pt;font-family:Consolas;
 color:black'>ImageFilter.SHARPEN</span><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:black'>&nbsp;и сравнить результат с
 исходным изображением:</span></p>
@@ -1196,7 +1170,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы мож�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=400 height=200 id="Рисунок 32"
-src="index.files/image013.jpg" alt=" Изображение с резкостью справа"></span><span
+src="PillowKAN.files/image013.jpg" alt=" Изображение с резкостью справа"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Изображение
 с резкостью справа</span></p>
 
@@ -1224,7 +1198,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Ниже в�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=400 height=200 id="Рисунок 31"
-src="index.files/image014.jpg"
+src="PillowKAN.files/image014.jpg"
 alt="https://habrastorage.org/r/w1560/getpro/habr/upload_files/e2e/a4a/0c5/e2ea4a0c56ac29ad6aa3694a74ce1638.jpg"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1255,14 +1229,15 @@ ImageFilter в Pillow имеет предопределенное ядро &#820
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-style='font-size:10.0pt;font-family:Consolas;color:black'>img_gray = img.convert(&quot;L&quot;)<br>
+style='font-size:10.0pt;font-family:Consolas;color:black'>img_gray =
+img.convert(&quot;L&quot;)<br>
 edges = img_gray.filter(ImageFilter.FIND_EDGES)<br>
 edges.show()</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=605 height=402 id="Рисунок 30"
-src="index.files/image015.jpg" alt="результат обнаружения границ"></span><span
+color:black'><img border=0 width=606 height=402 id="Рисунок 30"
+src="PillowKAN.files/image015.jpg" alt="результат обнаружения границ"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>результат
 обнаружения границ</span></p>
 
@@ -1289,8 +1264,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Изучит
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=531 height=1056 id="Рисунок 29"
-src="index.files/image016.jpg"
+color:black'><img border=0 width=531 height=1057 id="Рисунок 29"
+src="PillowKAN.files/image016.jpg"
 alt="https://habrastorage.org/r/w1560/getpro/habr/upload_files/b1e/a01/e6a/b1ea01e6a3c6f9fa54a13d26a491e304.jpg"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1316,7 +1291,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>В данн�
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=602 height=640 id="Рисунок 28"
-src="index.files/image017.jpg"
+src="PillowKAN.files/image017.jpg"
 alt="Изображение с очерченными границами находится справа"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Изображение
 с очерченными границами находится справа</span></p>
@@ -1349,7 +1324,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=622 height=413 id="Рисунок 27"
-src="index.files/image018.jpg"
+src="PillowKAN.files/image018.jpg"
 alt="https://habrastorage.org/r/w1560/getpro/habr/upload_files/cc8/9a2/fc1/cc89a2fc1894097218ccf52ac592bbf5.jpg"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1359,9 +1334,11 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>В этом
 style='font-size:13.5pt;font-family:Consolas;color:black'>ImageFilter</span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>&nbsp;фильтрах,
 которые можно применять к изображениям. Существуют и другие фильтры. Вы можете
-увидеть список всех доступных фильтров в&nbsp;<a
+увидеть список всех доступных фильтров в&nbsp;</span><a
 href="https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html?highlight=imagefilter#imagefilter-module"
-target="_blank">документации ImageFilter</a>.</span></p>
+target="_blank"><span style='font-size:13.5pt;font-family:"Arial",sans-serif'>документации
+ImageFilter</span></a><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+color:black'>.</span></p>
 
 <p class=MsoNormal style='margin-top:42.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1379,17 +1356,18 @@ target="_blank">репозитории</a>&nbsp;изображений для э
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=643 height=426 src="index.files/image019.png"
-alt="  - Описание: cat.jpg"></span><span style='font-size:13.5pt;font-family:
-"Arial",sans-serif;color:black'>cat.jpg<img border=0 width=615 height=410
-id="Рисунок 25" src="index.files/image020.jpg" alt=monastery.jpg>monastery.jpg</span></p>
+color:black'><img border=0 width=643 height=426
+src="PillowKAN.files/image019.png" alt="  - Описание: cat.jpg"></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>cat.jpg<img
+border=0 width=616 height=409 id="Рисунок 25" src="PillowKAN.files/image020.jpg"
+alt=monastery.jpg>monastery.jpg</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы можете
-использовать библиотеку Python Pillow, чтобы извлечь кота из первого изображения
-и разместить его на полу монастырского двора. Для этого потребуется ряд методов
-обработки изображений.</span></p>
+использовать библиотеку Python Pillow, чтобы извлечь кота из первого
+изображения и разместить его на полу монастырского двора. Для этого потребуется
+ряд методов обработки изображений.</span></p>
 
 <p class=MsoNormal style='margin-top:42.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1432,7 +1410,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Обреза
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=553 height=834 id="Рисунок 24"
-src="index.files/image021.jpg"
+src="PillowKAN.files/image021.jpg"
 alt="https://habrastorage.org/r/w1560/getpro/habr/upload_files/164/c58/866/164c588663660549f7d48d519e0c5c53.jpg"></span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1467,13 +1445,13 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
 Consolas;color:black'>point()</span><span style='font-size:13.5pt;font-family:
 "Arial",sans-serif;color:black'>&nbsp;для преобразования каждого пикселя в
 изображении в градациях серого либо в 255, либо в 0. Преобразование зависит от
-того, больше или меньше значение в изображении в градациях серого, чем пороговое
-значение. Пороговое значение в этом примере равно 100.</span></p>
+того, больше или меньше значение в изображении в градациях серого, чем
+пороговое значение. Пороговое значение в этом примере равно 100.</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=602 height=454 id="Рисунок 23"
-src="index.files/image022.jpg"
+color:black'><img border=0 width=601 height=453 id="Рисунок 23"
+src="PillowKAN.files/image022.jpg"
 alt="изображение в градациях серого и результат процесса пороговой обработки"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>изображение
 в градациях серого и результат процесса пороговой обработки</span></p>
@@ -1488,15 +1466,15 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>В этом
 
 <p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Пороговое
-значение можно использовать для сегментации изображений, когда объект для
-сегментации отличается от фона. Вы можете добиться лучших результатов с более
-контрастными версиями исходного изображения. В этом примере вы можете добиться
-более высокой контрастности, установив порог синего канала исходного
-изображения, а не изображения в градациях серого, поскольку доминирующими цветами
-фона являются коричневый и зеленый цвета, которые имеют слабую синюю
-составляющую. Вы можете извлечь красный, зеленый и синий каналы из цветного
-изображения, как мы это делали ранее:</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Пороговое значение
+можно использовать для сегментации изображений, когда объект для сегментации
+отличается от фона. Вы можете добиться лучших результатов с более контрастными
+версиями исходного изображения. В этом примере вы можете добиться более высокой
+контрастности, установив порог синего канала исходного изображения, а не
+изображения в градациях серого, поскольку доминирующими цветами фона являются
+коричневый и зеленый цвета, которые имеют слабую синюю составляющую. Вы можете
+извлечь красный, зеленый и синий каналы из цветного изображения, как мы это
+делали ранее:</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1509,7 +1487,7 @@ blue.show()</span></p>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=643 height=324 id="Рисунок 22"
-src="index.files/image023.jpg"
+src="PillowKAN.files/image023.jpg"
 alt="Красный, зеленый и синий режимы показаны слева направо. Все три отображаются как изображения в градациях серого"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Красный,
 зеленый и синий режимы показаны слева направо. Все три отображаются как
@@ -1560,7 +1538,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Возмож
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=686 height=887 src="index.files/image024.png"
+color:black'><img border=0 width=686 height=887
+src="PillowKAN.files/image024.png"
 alt="  - Описание: результат пороговой обработки"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>результат
 пороговой обработки</span></p>
@@ -1594,9 +1573,9 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=311 height=311 src="index.files/image025.png"
-alt="  - Описание: dot_and_hole.jpg"></span><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:black'>dot_and_hole.jpg</span></p>
+color:black'><img border=0 width=311 height=311
+src="PillowKAN.files/image025.png" alt="  - Описание: dot_and_hole.jpg"></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>dot_and_hole.jpg</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1650,8 +1629,7 @@ range(3):</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>    img =
-img.filter(ImageFilter.MinFilter(3))</span></p>
+lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'>    img = img.filter(ImageFilter.MinFilter(3))</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1660,12 +1638,14 @@ style='font-size:10.0pt;font-family:Consolas;color:black'>img.show()</span></p>
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Мы
-применяем фильтр три раза, используя цикл for. Этот код дает следующий результат:</span></p>
+применяем фильтр три раза, используя цикл for. Этот код дает следующий
+результат:</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=242 height=241 id="Рисунок 60"
-src="index.files/image026.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span><img width=200 height=200 src="index.files/image027.png"
+src="PillowKAN.files/image026.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span><img width=200 height=200
+src="PillowKAN.files/image027.png"
 alt="https://habrastorage.org/getpro/habr/upload_files/91a/e62/342/91ae62342e17b032f2cfff6160663d9d.webp"></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1702,17 +1682,18 @@ img.show()</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=330 height=330 id="Рисунок 61"
-src="index.files/image028.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'>теперь точка стала больше, а дырка уменьшилась</span></p>
+src="PillowKAN.files/image028.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span><span style='font-size:13.5pt;
+font-family:"Arial",sans-serif;color:black'>теперь точка стала больше, а дырка
+уменьшилась</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы можете
-использовать эрозию и расширение вместе, чтобы заполнить дыры и удалить мелкие
-объекты из бинарного изображения. Используя изображение с точкой и отверстием,
-вы можете выполнить десять циклов эрозии, чтобы удалить точку, а затем десять
-циклов расширения, чтобы восстановить исходный размер отверстия:</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы можете использовать
+эрозию и расширение вместе, чтобы заполнить дыры и удалить мелкие объекты из
+бинарного изображения. Используя изображение с точкой и отверстием, вы можете
+выполнить десять циклов эрозии, чтобы удалить точку, а затем десять циклов
+расширения, чтобы восстановить исходный размер отверстия:</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><b><span
@@ -1754,8 +1735,9 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=353 height=354 id="Рисунок 62"
-src="index.files/image029.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span><img width=200 height=200 src="index.files/image027.png"
+src="PillowKAN.files/image029.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span><img width=200 height=200
+src="PillowKAN.files/image027.png"
 alt="https://habrastorage.org/getpro/habr/upload_files/8da/e9f/6bd/8dae9f6bd56435cdf9ff071ad96ebe40.webp"></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1767,8 +1749,9 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Точка
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=359 height=362 id="Рисунок 63"
-src="index.files/image030.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span><img width=200 height=200 src="index.files/image027.png"
+src="PillowKAN.files/image030.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span><img width=200 height=200
+src="PillowKAN.files/image027.png"
 alt="https://habrastorage.org/getpro/habr/upload_files/319/496/f51/319496f512afa2d727f8354fe62fdc2f.webp"></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1854,8 +1837,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Новое
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=610 height=920 id="Рисунок 64"
-src="index.files/image031.png"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image031.png"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -1877,7 +1860,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Пятьде
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><img
-border=0 width=574 height=695 id="Рисунок 65" src="index.files/image032.jpg"><span
+border=0 width=574 height=695 id="Рисунок 65" src="PillowKAN.files/image032.jpg"><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -1903,8 +1886,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>В
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=474 height=700 id="Рисунок 66"
-src="index.files/image033.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image033.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -1929,8 +1912,8 @@ lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=454 height=667 id="Рисунок 67"
-src="index.files/image034.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image034.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -1978,8 +1961,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=450 height=664 id="Рисунок 68"
-src="index.files/image035.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image035.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -1987,8 +1970,8 @@ color:black'>Композитное изображение</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
-сегментировали изображение кота и выделили его из фона.</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы сегментировали
+изображение кота и выделили его из фона.</span></p>
 
 <p class=MsoNormal style='margin-top:42.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -2056,8 +2039,8 @@ color:black'>Вы использовали образ, полученный в �
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=647 height=430 id="Рисунок 10"
-src="index.files/image036.jpg" alt="кошка в монастыре после всех операций"></span><span
+color:black'><img border=0 width=647 height=431 id="Рисунок 10"
+src="PillowKAN.files/image036.jpg" alt="кошка в монастыре после всех операций"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>кошка в
 монастыре после всех операций</span></p>
 
@@ -2099,9 +2082,9 @@ img_logo.show()</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=591 height=598 id="Рисунок 69"
-src="index.files/image037.png"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'>полноразмерный логотип в цвете</span></p>
+src="PillowKAN.files/image037.png"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span><span style='font-size:13.5pt;
+font-family:"Arial",sans-serif;color:black'>полноразмерный логотип в цвете</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -2109,8 +2092,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы мож�
 изменить изображение на оттенки серого и установить пороговое значение с
 помощью&nbsp;</span><span style='font-size:13.5pt;font-family:Consolas;
 color:black'>.point()</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'>, чтобы преобразовать его в черно-белое изображение. Вы также
-уменьшаете его размер и преобразуете в контурное изображение:</span></p>
+color:black'>, чтобы преобразовать его в черно-белое изображение. Вы также уменьшаете
+его размер и преобразуете в контурное изображение:</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -2138,8 +2121,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>На вых�
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=399 height=403 id="Рисунок 70"
-src="index.files/image038.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image038.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2175,7 +2158,7 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Вы
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><img
-border=0 width=624 height=629 id="Рисунок 71" src="index.files/image039.jpg"></p>
+border=0 width=624 height=629 id="Рисунок 71" src="PillowKAN.files/image039.jpg"></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2210,7 +2193,7 @@ Python:</span></p>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:black'><img border=0 width=627 height=417 id="Рисунок 6"
-src="index.files/image040.jpg" alt="итоговое изображение с логотипом"></span><span
+src="PillowKAN.files/image040.jpg" alt="итоговое изображение с логотипом"></span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>итоговое
 изображение с логотипом</span></p>
 
@@ -2287,8 +2270,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Посмот
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=624 height=281 id="Рисунок 72"
-src="index.files/image041.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image041.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2328,7 +2311,7 @@ Consolas;color:#8959A8'>with</span></b><span lang=EN-US style='font-size:10.0pt;
 font-family:Consolas;color:black'> Image.open(&quot;house_left.jpg&quot;) </span><b><span
 lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:#8959A8'>as</span></b><span
 lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> left:<br>
-...     left.load()<br>
+...     left.load()<br>
 ...<br>
 &gt;&gt;&gt; </span><b><span lang=EN-US style='font-size:10.0pt;font-family:
 Consolas;color:#8959A8'>with</span></b><span lang=EN-US style='font-size:10.0pt;
@@ -2357,9 +2340,9 @@ style='font-size:13.5pt;font-family:Consolas;color:black'>left_array</span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>&nbsp;и&nbsp;</span><span
 style='font-size:13.5pt;font-family:Consolas;color:black'>right_array</span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>&nbsp;являются
-объектами типа numpy.ndarray, вы можете оперировать ими, используя все
-инструменты, доступные в NumPy. Можно вычесть один массив из другого, чтобы
-показать пиксели, которые различаются между двумя изображениями:</span></p>
+объектами типа numpy.ndarray, вы можете оперировать ими, используя все инструменты,
+доступные в NumPy. Можно вычесть один массив из другого, чтобы показать
+пиксели, которые различаются между двумя изображениями:</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -2394,8 +2377,8 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Резуль
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=509 height=427 id="Рисунок 73"
-src="index.files/image042.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image042.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2468,8 +2451,8 @@ color:black'>Image.fromarray()</span><span style='font-size:13.5pt;font-family:
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=624 height=623 id="Рисунок 74"
-src="index.files/image043.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image043.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2543,8 +2526,8 @@ color:black'>Image.merge()</span><span style='font-size:13.5pt;font-family:
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><img border=0 width=433 height=431 id="Рисунок 75"
-src="index.files/image044.jpg"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'> </span></p>
+src="PillowKAN.files/image044.jpg"><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:black'> </span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -2602,7 +2585,7 @@ lang=EN-US style='font-size:10.0pt;font-family:Consolas;color:black'> range(0,
         Image.merge(<br>
             &quot;RGB&quot;,<br>
             (red_img, green_img, blue_img)<br>
-        )<br>
+        )<br>
     )</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
@@ -2693,11 +2676,9 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>, чтобы
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'><img border=0 width=600 height=600 src="index.files/image045.gif"></span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:black'>сохраненная в gif анимация</span></p>
+color:black'><img border=0 width=103 height=66
+src="PillowKAN.files/image045.png"></span><span style='font-size:13.5pt;
+font-family:"Arial",sans-serif;color:black'>сохраненная в gif анимация</span></p>
 
 <p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
@@ -2723,10 +2704,9 @@ Gonzalez and Woods</a>, который является классическим
 <p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:black'>Pillow — не
-единственная библиотека, которую используется в Python для обработки
-изображений. Если ваша цель состоит в том, чтобы выполнить некоторую базовую
-обработку, то методы, которые вы изучили в этом руководстве, могут быть всем,
-что вам нужно.</span></p>
+единственная библиотека, которую используется в Python для обработки изображений.
+Если ваша цель состоит в том, чтобы выполнить некоторую базовую обработку, то
+методы, которые вы изучили в этом руководстве, могут быть всем, что вам нужно.</span></p>
 
 <p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
 0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal;background:white'><span
